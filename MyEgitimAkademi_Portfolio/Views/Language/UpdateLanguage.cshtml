@@ -1,0 +1,15 @@
+﻿@model MyEgitimAkademi_Portfolio.Models.Language
+
+@{ ViewBag.Title = "UpdateLanguage";
+                Layout = "~/Views/Shared/_AdminLayout.cshtml"; }
+
+<h2>Dil Güncelleme Sayfası</h2>
+
+<form method="post">
+    <label>Dil ID</label>
+    @Html.TextBoxFor(x => x.LanguageID, new { @class = "form-control" })
+    @Html.TextBoxFor(x => x.LangueUrl, new { @class = "form-control" })
+    
+    <br />
+    <button class="btn btn-outline-success">Verileri Güncelle</button>
+</form>

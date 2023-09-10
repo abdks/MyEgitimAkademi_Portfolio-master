@@ -1,0 +1,18 @@
+﻿@model List<MyEgitimAkademi_Portfolio.Models.Address>
+@foreach (var item in Model)
+{
+    <p>
+        @item.Description
+    </p>
+    <ul class="address mt-md-5 mt-4">
+        <li class="mb-3">
+            <p><span class="fa fa-phone"></span> <a href="tel:@item.Phone">@item.Phone</a></p>
+        </li>
+        <li class="mb-4">
+            <p><span class="fa fa-envelope-open"></span> <a href="mailto:@item.Mail">@item.Mail</a></p>
+        </li>
+        <li class="">
+            <p><span class="fa fa-map-marker"></span> @item.AddressDetail.</p>
+        </li>
+    </ul>
+}

@@ -1,0 +1,17 @@
+﻿@model MyEgitimAkademi_Portfolio.Models.SocialMedia
+
+@{ ViewBag.Title = "UpdateSocialMedia";
+                Layout = "~/Views/Shared/_AdminLayout.cshtml"; }
+
+<h2>Güncelleme Sayfası</h2>
+
+<form method="post">
+    <label>ID</label>
+    @Html.TextBoxFor(x=> x.SocialID, new { @class = "form-control" })
+    <label>Sosyal Medya Adı</label>
+    @Html.TextBoxFor(x => x.SocialName, new { @class = "form-control" })
+    <label>Link</label>
+    @Html.TextBoxFor(x => x.SocialUrl, new { @class = "form-control" })
+<br />
+    <button class="btn btn-outline-success">Verileri Güncelle</button>
+</form>

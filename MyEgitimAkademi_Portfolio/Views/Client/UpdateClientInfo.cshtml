@@ -1,0 +1,23 @@
+﻿@model MyEgitimAkademi_Portfolio.Models.ClientInfo
+@{
+    ViewBag.Title = "UpdateClientInfo";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<h2>Başıl ve Açıklama Güncelleme Sayfası</h2>
+
+<form method="post">
+    <label>Bilgi ID</label>
+    @Html.TextBoxFor(x => x.InfoID, new { @class = "form-control" })
+    <br />
+    <label>Başlık</label>
+    @Html.TextBoxFor(x => x.NameSurname, new { @class = "form-control" })
+    <br />
+    <label>Açıklama</label>
+    @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-outline-success">Verileri Güncelle</button>
+</form>
+
+
+
+

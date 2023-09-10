@@ -1,0 +1,22 @@
+﻿@model List<MyEgitimAkademi_Portfolio.Models.Language>
+@{ ViewBag.Title = "Index";
+                Layout = "~/Views/Shared/_AdminLayout.cshtml"; }
+
+<h2>Dil Sayfası</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Resim Linki</th>
+       
+    </tr>
+    @foreach (var item in Model)
+    {
+<tr>
+   <td>@item.LanguageID</td>
+   <td>@item.LangueUrl</td>
+    <td><a href="/Language/DeleteLanguage/@item.LanguageID" class="btn btn-outline-danger">Sil</a></td>
+    <td><a href="/Language/UpdateLanguage/@item.LanguageID" class="btn btn-outline-success">Güncelle</a></td>
+</tr>}
+</table>
+<a href="/Language/AddLanguage/" class="btn btn-outline-primary">Yeni Resim Girişi</a>

@@ -1,0 +1,53 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Master login Form Responsive Widget Template  :: w3layouts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content=" Master  Login Form Widget Tab Form,Login Forms,Sign up Forms,Registration Forms,News letter Forms,Elements" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <link href="~/Templates/weblogin/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="//fonts.googleapis.com/css?family=Cormorant+SC:300,400,500,600,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+</head>
+
+<body>
+    <div class="padding-all">
+        <div class="header">
+            <h1>Admin Paneli Girişi</h1>
+        </div>
+
+        <div class="design-w3l">
+            <div class="mail-form-agile">
+                @using (Html.BeginForm("Login", "Login", FormMethod.Post))
+                {
+                    <input type="text" name="Adminname" placeholder="Kullancı Adını Giriniz" required="" />
+                    <input type="password" name="Adminpassword" class="padding" placeholder="Şifreniz" required="" />
+                    <input type="submit" value="Giriş Yap" style="font-family: Arial, sans-serif; font-size: 18px; background-color: #007BFF; color: #ffffff; padding: 10px 20px; border-radius: 5px; border: none; cursor: pointer; text-decoration: none; transition: background-color 0.3s ease;">
+
+                }
+                <div class="clear"> </div>
+                <br />
+                <label style="font-family: Arial, sans-serif; font-size: 18px; background-color: #007BFF; color: #ffffff; padding: 10px 20px; border-radius: 5px; text-decoration: none; transition: background-color 0.3s ease;">
+                    <a href="~/Register/AdminAdd/Index" style="color: inherit; text-decoration: none;">Kayıt Ol</a>
+                </label>
+
+            </div>
+
+       
+    </div>
+        </div>
+</body>
+</html>

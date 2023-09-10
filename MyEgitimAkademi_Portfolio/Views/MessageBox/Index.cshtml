@@ -1,0 +1,43 @@
+﻿@model List<MyEgitimAkademi_Portfolio.Models.Contact>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<h2>Mesaj Kutusu</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Mesaj ID</th>
+        <th>Adı</th>
+        <th>Email</th>
+        <th>Konu</th>
+        <th>Mesaj</th>
+        <th>Mesaj Sil</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ContactID</td>
+            <td>@item.Name</td>
+            <td><a href="mailto:@item.Mail">@item.Mail</a></td>
+            <td>@item.Subject</td>
+            <td>@item.Message</td>
+            <td><a onclick="myFunction(@item.ContactID.ToString())" class="btn btn-outline-danger">Sil</a></td>
+        </tr>
+    }
+</table>
+
+<script>
+    function myFunction(id) {
+        let text = "Mesajı silmek istediğine emin misin ?";
+        if (confirm(text) == true) {
+            location.href = "/MessageBox/DeleteMessage/" + id;
+        } else {
+        }
+    }
+</script>
+
+

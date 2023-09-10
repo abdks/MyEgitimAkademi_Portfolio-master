@@ -1,0 +1,38 @@
+﻿@model List<MyEgitimAkademi_Portfolio.Models.Feature>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Özellik Sayfası</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Özellik ID</th>
+        <th>Ad Soyad</th>
+        <th>Meslek</th>
+        <th>Açıklama</th>
+        <th>Instagram</th>
+        <th>Linkedin</th>
+        <th>Facebook</th>
+        <th>Twitter</th>
+        <th>Özellik Güncelle</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <th>@item.FeatureID</th>
+            <th>@item.NameSurname</th>
+            <th>@item.Job</th>
+            <th>@item.DescriptionText</th>
+            <th>@item.Instagram</th>
+            <th>@item.Linkedin</th>
+            <th>@item.Facebook</th>
+            <th>@item.Twitter</th>
+            <td><a href="/Feature/UpdateFeature/@item.FeatureID" class="btn btn-outline-success">Güncelle</a></td>
+        </tr>
+    }
+</table>
+
+

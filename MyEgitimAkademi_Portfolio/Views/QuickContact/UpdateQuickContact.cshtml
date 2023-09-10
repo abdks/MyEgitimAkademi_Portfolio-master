@@ -1,0 +1,46 @@
+﻿
+@model MyEgitimAkademi_Portfolio.Models.QuickContact
+
+@{
+    ViewBag.Title = "UpdateQuickContact";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Hızlı İletişim Sayfası</h2>
+
+<form method="post">
+    <label>İletişim ID</label>
+    @Html.TextBoxFor(x => x.ContactID, new { @class = "form-control" })
+    <br />
+    <label>Ad Soyad</label>
+    @Html.TextBoxFor(x => x.NameSurname, new { @class = "form-control" })
+    <br />
+    <label>Açıklama</label>
+    @Html.TextBoxFor(x => x.DescriptionText, new { @class = "form-control" })
+    <br />
+    <label>Telefon</label>
+    @Html.TextBoxFor(x => x.Phone, new { @class = "form-control" })
+    <br />
+    <label>Email</label>
+    @Html.TextBoxFor(x => x.Email, new { @class = "form-control" })
+    <br />
+    <label>Instagram</label>
+    @Html.TextBoxFor(x => x.Instagram, new { @class = "form-control" })
+    <br />
+    <label>Linkedin</label>
+    @Html.TextBoxFor(x => x.Linkedin, new { @class = "form-control" })
+    <br />
+    <label>Facebook</label>
+    @Html.TextBoxFor(x => x.Facebook, new { @class = "form-control" })
+    <br />
+    <label>Twitter</label>
+    @Html.TextBoxFor(x => x.Twitter, new { @class = "form-control" })
+    <br />
+
+    <button class="btn btn-outline-success">Verileri Güncelle</button>
+</form>
+
+
+
+
+

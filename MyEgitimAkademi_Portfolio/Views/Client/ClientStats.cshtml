@@ -1,0 +1,46 @@
+﻿@model List<MyEgitimAkademi_Portfolio.Models.ClientStats>
+
+@{
+    ViewBag.Title = "ClientStats";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Müşteri İstatistikSayfası</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Başlık</th>
+        <th>Açıklama</th>
+        <th>Veri</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.StatsID</td>
+            <td>@item.SubjectText</td>
+            <td>@item.DescriptionText</td>
+            <td>@item.StatsValue</td>
+            <td><a onclick="myFunction(@item.StatsID.ToString())" class="btn btn-outline-danger">Sil</a></td>
+            <td><a href="/Client/UpdateClientStats/@item.StatsID" class="btn btn-outline-success">Güncelle</a></td>
+        </tr>
+    }
+</table>
+<a href="/Client/AddClientStats/" class="btn btn-outline-primary">Yeni İstatistik Girişi</a>
+
+<script>
+    function myFunction(id) {
+        let text = "İstatistiği silmek istediğine emin misin ?";
+        if (confirm(text) == true) {
+            location.href = "/Client/DeleteClientStats/" + id;
+        } else {
+        }
+    }
+</script>
+
+
+
+
+

@@ -1,0 +1,38 @@
+﻿
+<section class="w3l-contactblock" id="contact">
+    <div class="midd-w3 py-5">
+        <div class="container py-lg-4 py-md-3">
+            <div class="contact-heading text-center">
+                <span class="text">Bana Ulaşın</span>
+                <h3 class="title-big">Beraber çaşılmaya<span> hazır mısınız ?</span></h3>
+                <p class="mt-4">Hadi birlikte proje gelişitirelim</p>
+            </div>
+            <div class="row mt-md-5 mt-4 pt-lg-3">
+                <div class="col-lg-5">
+                    @Html.Action("PartialContact")
+                </div>
+                <div class="col-lg-7 mt-lg-0 mt-md-5 mt-4">
+                    <form method="post">
+                        <div class="twice-two">
+                            <input type="text" class="form-control" name="Name" id="w3lName" placeholder="Adınız Soyadınız..."
+                                   required="">
+                            <input type="email" class="form-control" name="Mail" id="w3lSender" placeholder="Email Adresiniz..."
+                                   required="">
+                        </div>
+                        <div class="twice">
+                            <input type="text" class="form-control" name="Subject" id="w3lSubject"
+                                   placeholder="Mesaj Konusu..." required="">
+                        </div>
+                        <textarea name="Message" class="form-control" id="Message" placeholder="Mesaj..."
+                                  required=""></textarea>
+                        <div class="text-right">
+                            <button type="submit" class="btn btn-secondary btn-style mt-4">Mesajı Gönder</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+

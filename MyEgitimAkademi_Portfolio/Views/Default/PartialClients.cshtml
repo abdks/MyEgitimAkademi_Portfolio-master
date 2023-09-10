@@ -1,0 +1,9 @@
+﻿@model List<MyEgitimAkademi_Portfolio.Models.Clients>
+<div class="col-lg-6 align-self text-center mt-lg-0 mt-md-5 mt-4">
+    <div class="images">
+        @foreach (var item in Model)
+        {
+            <img src="@item.ImgUrl" class="img-fluid" alt="" />
+        }
+        </div>
+</div>

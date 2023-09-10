@@ -1,0 +1,26 @@
+﻿@model List<MyEgitimAkademi_Portfolio.Models.SocialMedia>
+@{ ViewBag.Title = "Index";
+                Layout = "~/Views/Shared/_AdminLayout.cshtml"; }
+
+<h2>Sosyal Medya Sayfası</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Sosyal Medya Adı</th>
+        <th>Sosyal Medya Linki</th>
+       
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+<tr>
+    <td>@item.SocialID</td>
+    <td>@item.SocialName</td>
+    <td>@item.SocialUrl</td>
+    <td><a href="/Social/DeleteSocialMedia/@item.SocialID" class="btn btn-outline-danger">Sil</a></td>
+    <td><a href="/Social/UpdateSocialMedia/@item.SocialID" class="btn btn-outline-success">Güncelle</a></td>
+</tr>}
+</table>
+<a href="/Social/AddSocialMedia/" class="btn btn-outline-primary">Yeni Sosyal Medya Girişi</a>

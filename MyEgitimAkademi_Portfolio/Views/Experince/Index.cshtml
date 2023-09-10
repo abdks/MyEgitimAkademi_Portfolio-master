@@ -1,0 +1,27 @@
+﻿@model List<MyEgitimAkademi_Portfolio.Models.Experince>
+
+@{ ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml"; }
+
+<h2>Deneyimlerim</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Deneyim Adı</th>
+        <th>Deneyim Açıklaması</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+<tr>
+    <td>@item.ExperienceID</td>
+    <td>@item.ExperinceAd</td>
+    <td>@item.ExperinceAciklama</td>
+    <td><a href="/Experince/ExperinceDelete/@item.ExperienceID" class="btn btn-outline-danger">Sil</a></td>
+    <td><a href="/Experince/ExperinceUpdate/@item.ExperienceID" class="btn btn-outline-success">Güncelle</a></td>
+</tr>
+}
+</table>
+<a href="/Experince/ExperinceAdd/" class="btn btn-outline-primary">Yeni Deneyim Girişi</a>

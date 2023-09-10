@@ -1,0 +1,28 @@
+﻿@model MyEgitimAkademi_Portfolio.Models.ClientStats
+
+@{
+    ViewBag.Title = "UpdateClientStats";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>İstatistik Güncelleme Sayfası</h2>
+
+<form method="post">
+    <label>İstatistik ID</label>
+    @Html.TextBoxFor(x => x.StatsID, new { @class = "form-control" })
+    <br />
+    <label>Başlık</label>
+    @Html.TextBoxFor(x => x.SubjectText, new { @class = "form-control" })
+    <br />
+    <label>Açıklama</label>
+    @Html.TextBoxFor(x => x.DescriptionText, new { @class = "form-control" })
+    <br />
+    <label>Veri</label>
+    @Html.TextBoxFor(x => x.StatsValue, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-outline-success">Verileri Güncelle</button>
+</form>
+
+
+
+

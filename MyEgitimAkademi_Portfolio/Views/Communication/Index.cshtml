@@ -1,0 +1,28 @@
+﻿@model List<MyEgitimAkademi_Portfolio.Models.Communication2>
+@{ ViewBag.Title = "Index";
+                Layout = "~/Views/Shared/_AdminLayout.cshtml"; }
+
+<h2>İletişim Sayfası</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Mesaj Sahibi</th>
+        <th>Mail Adresi</th>
+        <th>Mesaj Başlığı</th>
+        <th>Mesaj İçeriği</th>
+        <th>Sil</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+<tr>
+    <td>@item.CommunicationID</td>
+   <td>@item.CommunicationName</td>
+   <td>@item.CommunicationMail</td>
+   <td>@item.CommunicationSubject</td>
+   <td>@item.CommunicationMessage</td>
+
+    <td><a href="/Communication/DeleteCommunication/@item.CommunicationID" class="btn btn-outline-danger">Sil</a></td>
+</tr>}
+</table>
+

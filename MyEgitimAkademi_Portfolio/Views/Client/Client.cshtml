@@ -1,0 +1,42 @@
+﻿@model List<MyEgitimAkademi_Portfolio.Models.Clients>
+
+@{
+    ViewBag.Title = "Client";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Müşteri Sayfası</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Resim Url</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ClientID</td>
+            <td>@item.ImgUrl</td>
+            <td><a onclick="myFunction(@item.ClientID.ToString())" class="btn btn-outline-danger">Sil</a></td>
+            <td><a href="/Client/UpdateClient/@item.ClientID" class="btn btn-outline-success">Güncelle</a></td>
+        </tr>
+    }
+</table>
+<a href="/Client/AddClient/" class="btn btn-outline-primary">Yeni Müşteri Girişi</a>
+
+<script>
+    function myFunction(id) {
+        let text = "Müşteriyi silmek istediğine emin misin ?";
+        if (confirm(text) == true) {
+            location.href = "/Client/DeleteClient/" + id;
+        } else {
+        }
+    }
+</script>
+
+
+
+
+

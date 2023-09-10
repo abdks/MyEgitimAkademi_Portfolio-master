@@ -1,0 +1,38 @@
+﻿
+@model List<MyEgitimAkademi_Portfolio.Models.QuickContact>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<h2>Hızlı İletişim</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>İletişim ID</th>
+        <th>Ad Soyad</th>
+        <th>Açıklama</th>
+        <th>Telefon</th>
+        <th>Email</th>
+        <th>Instagram</th>
+        <th>Linkedin</th>
+        <th>Facebook</th>
+        <th>Twitter</th>
+        <th>İletişim Güncelle</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <th>@item.ContactID</th>
+            <th>@item.NameSurname</th>
+            <th>@item.DescriptionText</th>
+            <th>@item.Phone</th>
+            <th>@item.Email</th>
+            <th>@item.Instagram</th>
+            <th>@item.Linkedin</th>
+            <th>@item.Facebook</th>
+            <th>@item.Twitter</th>
+            <td><a href="/QuickContact/UpdateQuickContact/@item.ContactID" class="btn btn-outline-success">Güncelle</a></td>
+        </tr>
+    }
+</table>
