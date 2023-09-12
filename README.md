@@ -1,33 +1,47 @@
-# Description
-ASP.NET Core MVC 5 tabanlı kişisel bir web uygulaması, yöneticilerin tüm içeriği kolayca denetleyebildiği ve yönetebildiği etkileyici bir dinamik yönetim paneline sahiptir. Aynı zamanda, web sitesindeki her veri de dinamik olarak listelenmektedir.
-# Tecnologies
-* Asp net Mvc
-* Db First
-* Entity FrameWork
-* Sql Server
+# MyEgitimAkademiPortfolio
 
-![Ekran görüntüsü 2023-09-07 004845](https://github.com/SaimYce/MyEgitimAkademi_Portfolio/assets/100414572/154c330d-7add-4b17-b359-222f3d1f6cc7)
-![Ekran görüntüsü 2023-09-07 004822](https://github.com/SaimYce/MyEgitimAkademi_Portfolio/assets/100414572/cc50d942-41c5-4c90-9f16-18cb28e9c32e)
-![Ekran görüntüsü 2023-09-07 004755](https://github.com/SaimYce/MyEgitimAkademi_Portfolio/assets/100414572/bd222737-976f-4b48-9524-07963e8c9921)
-![Ekran görüntüsü 2023-09-07 004431](https://github.com/SaimYce/MyEgitimAkademi_Portfolio/assets/100414572/a572c313-5a7b-4bbe-a4c0-3684a95791ee)
-![Ekran görüntüsü 2023-09-07 003817](https://github.com/SaimYce/MyEgitimAkademi_Portfolio/assets/100414572/1eb88d5c-c3ce-4dd6-a53a-0512d90cf9d5)
-![Ekran görüntüsü 2023-09-07 003743](https://github.com/SaimYce/MyEgitimAkademi_Portfolio/assets/100414572/9725c335-2416-465b-8ce0-56e9c5e30ae6)
+Bu ASP.NET Core MVC 5 tabanlı kişisel web uygulaması, yöneticilere içerikleri sorunsuz bir şekilde denetleme ve yönetme imkanı sunan oldukça etkileyici bir dinamik yönetim paneli ile donatılmıştır.
 
+## Teknolojiler
 
-  # Instalation
-  Öncelikle projeyi klonlayın
+Bu projede aşağıdaki teknolojiler kullanılmıştır:
 
-  git clone https://github.com/Aydinmfatih/Academy_Portfolio.git
-  Mssql deki connection stringinizi değiştirerek projeyi ayağa kaldırabilirsiniz.
+- **ASP.NET MVC:** Web uygulamasının temel çerçevesi olarak kullanıldı.
+- **Db First:** Veritabanı şeması, mevcut bir veritabanından çıkarıldı.
+- **Entity Framework:** Veritabanı etkileşimi ve ORM (Nesne İlişkilendirme Haritası) için kullanıldı.
+- **SQL Server:** Veritabanı yönetimi ve depolama için kullanıldı.
 
-  # Using
-  Kayıt olma sayfasına gitmek için kendi Local adresinizin sonuna /Register ekleyerek indexine gitmeniz gerekmektedir. Kayıt oluşturduktan sonra login sayfasına yönlendirileceksiniz ve login yaparak admin panelini kullanmaya başlayailirsiniz.
+##Resimler
+![1](https://github.com/abdks/MyEgitimAkademiPortfolio/assets/62968246/bc3f2509-52d5-42ad-8af1-205cf958e5f2)
 
+![2](https://github.com/abdks/MyEgitimAkademiPortfolio/assets/62968246/c7722da0-33e1-47d2-88e6-585883f5ece8)
+
+![3](https://github.com/abdks/MyEgitimAkademiPortfolio/assets/62968246/4246dd22-ad94-498c-860d-f545291a2b21)
+
+![4](https://github.com/abdks/MyEgitimAkademiPortfolio/assets/62968246/27f354f5-1991-4975-95f2-8c36b119250d)
+
+![5](https://github.com/abdks/MyEgitimAkademiPortfolio/assets/62968246/fe1b74c7-4c08-4263-85ea-d5cdf3da3ee0)
 
 
+## Özellikler
 
+- **Dinamik Yönetim Paneli:** Yöneticiler, içerikleri kolayca denetleyebilir ve yönetebilir.
+- **Portfolyo Görüntüleme:** Misafirler, çalışmalarını kolayca görebilir.
+- **Detaylı Bilgi:** Her proje veya öğe hakkında daha fazla bilgi sağlama yeteneği.
 
+## Kurulum
 
+1. Projeyi klonlayın: `git clone https://github.com/sizin-kullanici-adi/sizin-proje-adiniz.git`
+2. Visual Studio veya Visual Studio Code gibi bir IDE kullanarak projeyi açın.
+3. Bağlantı dizesini düzenleyin: `appsettings.json` dosyasında SQL Server bağlantı dizesini güncelleyin.
+4. Veritabanını güncelleyin: Visual Studio'da "Package Manager Console" kullanarak Entity Framework migrations kullanarak veritabanını oluşturun ve güncelleyin.
 
+## Kullanım
+
+Projeyi başlattıktan sonra, yönetim paneline erişmek için kullanıcı adı ve şifre oluşturabilirsiniz. Daha sonra içerik ekleyebilir, düzenleyebilir ve silebilirsiniz. Kullanıcılar portfolyonuzu görüntüleyebilir ve her projenin ayrıntılarını inceleyebilir.
+
+## Katkıda Bulunma
+
+Katkıda bulunmak için bu projeyi çatallayın ve geliştirin. Daha sonra değişikliklerinizi bir pull isteği olarak gönderin.
 
 
