@@ -11,7 +11,7 @@ Bu projede aşağıdaki teknolojiler kullanılmıştır:
 - **SQL Server:** Veritabanı yönetimi ve depolama için kullanıldı.
 
 ##Resimler
-![1](https://github.com/abdks/MyEgitimAkademiPortfolio/assets/62968246/bc3f2509-52d5-42ad-8af1-205cf958e5f2)
+![1](https://github.com/abdks/MyEgitimAkademi_Portfolio-master/assets/62968246/ffe774fe-bd0a-48e8-87e3-367d834b94ba)
 
 ![2](https://github.com/abdks/MyEgitimAkademiPortfolio/assets/62968246/c7722da0-33e1-47d2-88e6-585883f5ece8)
 
