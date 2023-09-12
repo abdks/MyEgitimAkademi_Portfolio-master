@@ -13,14 +13,16 @@ Bu projede aşağıdaki teknolojiler kullanılmıştır:
 ##Resimler
 ![1](https://github.com/abdks/MyEgitimAkademi_Portfolio-master/assets/62968246/ffe774fe-bd0a-48e8-87e3-367d834b94ba)
 
-![2](https://github.com/abdks/MyEgitimAkademiPortfolio/assets/62968246/c7722da0-33e1-47d2-88e6-585883f5ece8)
+![2](https://github.com/abdks/MyEgitimAkademi_Portfolio-master/assets/62968246/265e48c6-5db7-4f5f-a268-797b3e00d9e5)
 
-![3](https://github.com/abdks/MyEgitimAkademiPortfolio/assets/62968246/4246dd22-ad94-498c-860d-f545291a2b21)
+![3](https://github.com/abdks/MyEgitimAkademi_Portfolio-master/assets/62968246/f03b9995-e048-4e08-b63f-0c93a4c3128f)
 
-![4](https://github.com/abdks/MyEgitimAkademiPortfolio/assets/62968246/27f354f5-1991-4975-95f2-8c36b119250d)
+![4](https://github.com/abdks/MyEgitimAkademi_Portfolio-master/assets/62968246/71c0d78a-bbcd-46e7-b1dd-fffc1e257cca)
 
-![5](https://github.com/abdks/MyEgitimAkademiPortfolio/assets/62968246/fe1b74c7-4c08-4263-85ea-d5cdf3da3ee0)
+![5](https://github.com/abdks/MyEgitimAkademi_Portfolio-master/assets/62968246/b05242c8-afb3-4f70-8b8a-c0247deabb21)
 
+![6](https://github.com/abdks/MyEgitimAkademi_Portfolio-master/assets/62968246/52bea978-f79c-4d23-9912-bf6c9e5fa180)
+![7](https://github.com/abdks/MyEgitimAkademi_Portfolio-master/assets/62968246/d043bf68-eca3-479c-996d-3ad8f5f8eb05)
 
 ## Özellikler
 
