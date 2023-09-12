@@ -1,7 +1,6 @@
 # MyEgitimAkademiPortfolio
 
-Bu ASP.NET Core MVC 5 tabanlı kişisel web uygulaması, yöneticilere içerikleri sorunsuz bir şekilde denetleme ve yönetme imkanı sunan oldukça etkileyici bir dinamik yönetim paneli ile donatılmıştır.
-
+Bu Projede Amacım Kendi Kişisel Portfolyo Sitemi Yapmaktı. Admin Paneline Girmek İçin Öncelikle Giriş Yapmanız Gerekmektedir. Üzülmeyin Bir Hesabınız Yoksa Kayıt Olarak Hesap Oluşturabilirsiniz.
 ## Teknolojiler
 
 Bu projede aşağıdaki teknolojiler kullanılmıştır:
